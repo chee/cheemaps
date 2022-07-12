@@ -363,15 +363,5 @@
 				"command": "workbench.action.terminal.focusNext"
 			}
 		]
-	},
-	"__metadata": {
-		"id": "25a29913-7e96-4ce1-adfb-427bc5b78517",
-		"publisherId": "3b030722-7e78-48be-9786-23033d2b42f0",
-		"publisherDisplayName": "chee",
-		"targetPlatform": "undefined",
-		"updated": false,
-		"isPreReleaseVersion": false,
-		"preRelease": false,
-		"installedTimestamp": 1650362714486
 	}
 }
