@@ -298,21 +298,6 @@
 				"when": "editorTextFocus && !editorReadonly"
 			},
 			{
-				"key": "meta+x",
-				"command": "emacs-mcx.killRegion",
-				"when": "editorTextFocus && !editorReadonly"
-			},
-			{
-				"key": "meta+c",
-				"command": "emacs-mcx.copyRegion",
-				"when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
-			},
-			{
-				"key": "meta+v",
-				"command": "emacs-mcx.yank",
-				"when": "editorTextFocus && !editorReadonly"
-			},
-			{
 				"key": "alt+b",
 				"command": "cursorWordPartLeft"
 			},
