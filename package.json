@@ -1,0 +1,392 @@
+{
+	"publisher": "chee",
+	"license": "CC0-1.0",
+	"name": "cheemaps",
+	"repository": {
+		"type": "git",
+		"url": "https://git.snoot.club/chee/cheekeyoil"
+	},
+	"displayName": "chee's keys",
+	"description": "chee rabbits key maps",
+	"engines": {
+		"vscode": "^1.49.0"
+	},
+	"version": "0.1.2",
+	"categories": [
+		"Keymaps"
+	],
+	"scripts": {
+		"build": "node make.js"
+	},
+	"contributes": {
+		"keybindings": [
+			{
+				"key": "meta+v",
+				"command": "editor.action.clipboardPasteAction"
+			},
+			{
+				"key": "ctrl+shift+-",
+				"command": "undo"
+			},
+			{
+				"key": "meta+s",
+				"command": "workbench.action.files.save"
+			},
+			{
+				"key": "meta+n",
+				"command": "workbench.action.files.newUntitledFile"
+			},
+			{
+				"key": "meta+j",
+				"command": "workbench.action.terminal.toggleTerminal"
+			},
+			{
+				"key": "ctrl+a",
+				"command": "cursorHome",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "ctrl+e",
+				"command": "cursorEnd",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "ctrl+shift+e",
+				"command": "cursorEndSelect",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "ctrl+shift+a",
+				"command": "cursorHomeSelect",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "meta+p f",
+				"command": "workbench.action.quickOpen"
+			},
+			{
+				"key": "shift+meta+]",
+				"command": "workbench.action.nextEditor"
+			},
+			{
+				"key": "shift+meta+[",
+				"command": "workbench.action.previousEditor"
+			},
+			{
+				"key": "ctrl+tab",
+				"command": "workbench.action.nextEditor"
+			},
+			{
+				"key": "ctrl+shift+tab",
+				"command": "workbench.action.previousEditor"
+			},
+			{
+				"key": "meta+a",
+				"command": "editor.action.selectAll"
+			},
+			{
+				"key": "meta+a",
+				"command": "list.selectAll",
+				"when": "listFocus && listSupportsMultiselect && !inputFocus"
+			},
+			{
+				"key": "meta+d",
+				"command": "editor.action.addSelectionToNextFindMatch",
+				"when": "editorFocus"
+			},
+			{
+				"key": "meta+f",
+				"command": "actions.find",
+				"when": "editorFocus || editorIsOpen"
+			},
+			{
+				"key": "meta+l =",
+				"command": "editor.action.formatDocument",
+				"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+			},
+			{
+				"key": "meta+l =",
+				"command": "editor.action.formatDocument.none",
+				"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+			},
+			{
+				"key": "alt+.",
+				"command": "editor.action.revealDefinition",
+				"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+			},
+			{
+				"key": "meta+\\",
+				"command": "workbench.action.toggleSidebarVisibility"
+			},
+			{
+				"key": "ctrl+meta+\\",
+				"command": "workbench.action.toggleActivityBarVisibility"
+			},
+			{
+				"key": "meta+c",
+				"command": "editor.action.clipboardCopyAction"
+			},
+			{
+				"key": "meta+x",
+				"command": "editor.action.clipboardCutAction"
+			},
+			{
+				"key": "meta+z",
+				"command": "undo"
+			},
+			{
+				"key": "shift+meta+z",
+				"command": "redo"
+			},
+			{
+				"key": "meta+l meta+c",
+				"command": "editor.action.addCommentLine",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "meta+l m",
+				"command": "workbench.action.editor.changeLanguageMode"
+			},
+			{
+				"key": "meta+l meta+i",
+				"command": "editor.debug.action.showDebugHover",
+				"when": "editorTextFocus && inDebugMode"
+			},
+			{
+				"key": "meta+l meta+e",
+				"command": "workbench.files.action.focusOpenEditorsView",
+				"when": "workbench.explorer.openEditorsView.active"
+			},
+			{
+				"key": "meta+l c",
+				"command": "workbench.files.action.compareWithClipboard"
+			},
+			{
+				"key": "meta+l d",
+				"command": "workbench.files.action.compareWithSaved"
+			},
+			{
+				"key": "meta+l o",
+				"command": "workbench.action.files.showOpenedFileInNewWindow",
+				"when": "emptyWorkspaceSupport"
+			},
+			{
+				"key": "meta+l meta+o",
+				"command": "workbench.action.files.openFolder"
+			},
+			{
+				"key": "meta+l meta+s",
+				"command": "workbench.action.files.saveWithoutFormatting"
+			},
+			{
+				"key": "meta+l meta+r",
+				"command": "git.revertSelectedRanges",
+				"when": "isInDiffEditor"
+			},
+			{
+				"key": "meta+k",
+				"command": "editor.action.moveSelectionToNextFindMatch",
+				"when": "editorFocus"
+			},
+			{
+				"key": "meta+l f12",
+				"command": "editor.action.revealDefinitionAside",
+				"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+			},
+			{
+				"key": "meta+l meta+t",
+				"command": "workbench.action.selectTheme"
+			},
+			{
+				"key": "meta+l meta+m",
+				"command": "workbench.extensions.action.showRecommendedKeymapExtensions"
+			},
+			{
+				"key": "meta+l meta+k",
+				"command": "workbench.action.openGlobalKeybindings"
+			},
+			{
+				"key": "meta+l meta+w",
+				"command": "workbench.action.closeEditorsInGroup"
+			},
+			{
+				"key": "meta+l w",
+				"command": "workbench.action.closeAllEditors"
+			},
+			{
+				"key": "meta+l f",
+				"command": "workbench.action.closeFolder",
+				"when": "emptyWorkspaceSupport"
+			},
+			{
+				"key": "meta+l z",
+				"command": "workbench.action.toggleZenMode"
+			},
+			{
+				"key": "meta+w",
+				"command": "workbench.action.closeActiveEditor"
+			},
+			{
+				"key": "shift+meta+up",
+				"command": "editor.action.insertCursorAbove",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "shift+meta+down",
+				"command": "editor.action.insertCursorBelow",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "shift+alt+meta+down",
+				"command": "editor.action.copyLinesDownAction",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "shift+alt+meta+up",
+				"command": "editor.action.copyLinesUpAction",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "meta+r",
+				"command": "workbench.action.reloadWindow",
+				"when": "isDevelopment"
+			},
+			{
+				"key": "meta+e meta+s",
+				"command": "git.stageSelectedRanges",
+				"when": "isInDiffEditor"
+			},
+			{
+				"key": "meta+e meta+u",
+				"command": "git.unstageSelectedRanges",
+				"when": "isInDiffEditor"
+			},
+			{
+				"key": "meta+]",
+				"command": "editor.action.indentLines",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "meta+[",
+				"command": "editor.action.outdentLines",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "meta+p s",
+				"command": "workbench.action.findInFiles"
+			},
+			{
+				"key": "meta+p r",
+				"command": "workbench.action.replaceInFiles"
+			},
+			{
+				"key": "meta+p b",
+				"command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+			},
+			{
+				"key": "meta+p b",
+				"command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+				"when": "inEditorsPicker && inQuickOpen"
+			},
+			{
+				"key": "meta+,",
+				"command": "workbench.action.openSettings"
+			},
+			{
+				"key": "alt+;",
+				"command": "editor.action.commentLine",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "meta+x",
+				"command": "emacs-mcx.killRegion",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "meta+c",
+				"command": "emacs-mcx.copyRegion",
+				"when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+			},
+			{
+				"key": "meta+v",
+				"command": "emacs-mcx.yank",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "alt+b",
+				"command": "cursorWordPartLeft"
+			},
+			{
+				"key": "shift+alt+b",
+				"command": "cursorWordPartLeftSelect"
+			},
+			{
+				"key": "alt+f",
+				"command": "cursorWordPartRight"
+			},
+			{
+				"key": "shift+alt+f",
+				"command": "cursorWordPartRightSelect"
+			},
+			{
+				"key": "alt+d",
+				"command": "deleteWordPartRight"
+			},
+			{
+				"key": "alt+backspace",
+				"command": "deleteWordPartLeft"
+			},
+			{
+				"key": "alt+meta+b",
+				"command": "cursorWordLeft",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "shift+alt+meta+b",
+				"command": "cursorWordLeftSelect",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "alt+meta+f",
+				"command": "cursorWordRight"
+			},
+			{
+				"key": "shift+alt+meta+f",
+				"command": "cursorWordRightSelect"
+			},
+			{
+				"key": "alt+meta+backspace",
+				"command": "deleteWordLeft",
+				"when": "textInputFocus && !editorReadonly"
+			},
+			{
+				"key": "ctrl+backspace",
+				"command": "deleteWordLeft",
+				"when": "textInputFocus && !editorReadonly"
+			},
+			{
+				"key": "alt+meta+d",
+				"command": "deleteWordRight",
+				"when": "textInputFocus && !editorReadonly"
+			},
+			{
+				"key": "shift+meta+left",
+				"command": "workbench.action.terminal.focusPrevious"
+			},
+			{
+				"key": "shift+meta+right",
+				"command": "workbench.action.terminal.focusNext"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "25a29913-7e96-4ce1-adfb-427bc5b78517",
+		"publisherId": "3b030722-7e78-48be-9786-23033d2b42f0",
+		"publisherDisplayName": "chee",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1650362714486
+	}
+}
