@@ -4,14 +4,14 @@
 	"name": "cheemaps",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chee/cheekeyoil"
+		"url": "https://github.com/chee/cheemaps"
 	},
 	"displayName": "chee's keys",
 	"description": "chee rabbits key maps",
 	"engines": {
 		"vscode": "^1.49.0"
 	},
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"categories": [
 		"Keymaps"
 	],
@@ -22,11 +22,13 @@
 		"keybindings": [
 			{
 				"key": "meta+v",
-				"command": "editor.action.clipboardPasteAction"
+				"command": "editor.action.clipboardPasteAction",
+				"when": "textInputFocus && !editorReadonly"
 			},
 			{
 				"key": "ctrl+shift+-",
-				"command": "undo"
+				"command": "undo",
+				"when": "textInputFocus && !editorReadonly"
 			},
 			{
 				"key": "meta+s",
@@ -299,27 +301,33 @@
 			},
 			{
 				"key": "alt+b",
-				"command": "cursorWordPartLeft"
+				"command": "cursorWordPartLeft",
+				"when": "textInputFocus"
 			},
 			{
 				"key": "shift+alt+b",
-				"command": "cursorWordPartLeftSelect"
+				"command": "cursorWordPartLeftSelect",
+				"when": "textInputFocus"
 			},
 			{
 				"key": "alt+f",
-				"command": "cursorWordPartRight"
+				"command": "cursorWordPartRight",
+				"when": "textInputFocus"
 			},
 			{
 				"key": "shift+alt+f",
-				"command": "cursorWordPartRightSelect"
+				"command": "cursorWordPartRightSelect",
+				"when": "textInputFocus"
 			},
 			{
 				"key": "alt+d",
-				"command": "deleteWordPartRight"
+				"command": "deleteWordPartRight",
+				"when": "textInputFocus && !editorReadonly"
 			},
 			{
 				"key": "alt+backspace",
-				"command": "deleteWordPartLeft"
+				"command": "deleteWordPartLeft",
+				"when": "textInputFocus && !editorReadonly"
 			},
 			{
 				"key": "alt+meta+b",
@@ -333,11 +341,13 @@
 			},
 			{
 				"key": "alt+meta+f",
-				"command": "cursorWordRight"
+				"command": "cursorWordRight",
+				"when": "textInputFocus"
 			},
 			{
 				"key": "shift+alt+meta+f",
-				"command": "cursorWordRightSelect"
+				"command": "cursorWordRightSelect",
+				"when": "textInputFocus"
 			},
 			{
 				"key": "alt+meta+backspace",
